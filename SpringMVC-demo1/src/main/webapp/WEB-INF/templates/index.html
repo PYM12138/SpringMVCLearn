@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>首页</h1>
+<!--/target 代表绝对路径 ， 用了@{}则自动帮你把相对路径加上去，前提是要有thymeleaf视图解析器和（当前页）最上面那条语句-->
+<a th:href="@{/target}">国际知名程序</a>
+
+</body>
+</html>

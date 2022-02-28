@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+起始页<br>
+<a th:href="@{/hallo/success}">success页面</a><br>
+<a th:href="@{/hallo/test1}">success页面，不同的请求地址对应相同的页面(/test1)</a><br>
+<a th:href="@{/hallo/test2}">success页面，不同的请求地址对应相同的页面(/test2)</a><br>
+<a th:href="@{/hallo/test3}">success页面，method的属性-->GET</a><br>
+<form th:action="@{/hallo/test3}" method="post">
+    <input type="submit" value="success页面,method的属性--->POST">
+</form>
+<a th:href="@{/hallo/testParams(username='admin',password=123456)}">测试params属性</a><br>
+<a th:href="@{/hallo/a/testant}">测试ant风格路径</a><br>
+<a th:href="@{/hallo/testFul/1}">测试restful风格路径</a><br>
+
+</body>
+</html>
